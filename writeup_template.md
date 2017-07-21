@@ -145,7 +145,17 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The first image might be difficult to classify because ...
+The first image might be difficult to classify because...
+
+
+The above chosen cells are downloaded from the internet. They represent ahead-only, slippery-road, right of way at next intersection, stop sign and speed limit (60) respectively. 
+
+- The image of the stop sign also contains grass and sky. This might misclassify the image.
+- The similar case can be observed in case of Slippery road. The extra information supplied by the image to the model can make it misclassify the image. 
+
+- Other three images contain plain symbols that are very easy for the model to classify. 
+
+Inorder to fix the above problem, I can generate more data by augmenting the images. This will further increase the test accuracy of the images. 
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
